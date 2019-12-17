@@ -26,6 +26,11 @@
 > To try out visit: [visualize](https://visualize-regression.surge.sh)
 
 ------------------------------------------
+### Demo
+
+<video width="550" height="400" src="assets/demo.mp4"></video>
+
+------------------------------------------
 
 ### TODO
 - [x] Implement regression using TFJS
