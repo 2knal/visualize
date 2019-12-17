@@ -30,8 +30,10 @@
 ------------------------------------------
 ### Demo
 
-<video width="550" height="400" src="assets/demo.mp4"></video>
-
+<img width="600" height="315" src="assets/demo1.gif">
+<br>
+<br>
+<img width="600" height="315" src="assets/demo2.gif">
 ------------------------------------------
 
 ### TODO
@@ -39,6 +41,7 @@
 - [x] Option panel to tweak hyperparameters
 - [x] Visualize loss during training using tfjs-vis (Click on `Fly!`)
 - [ ] Improved CSS support
+- [ ] Proper tensor memory management
 
 
 
