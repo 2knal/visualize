@@ -33,7 +33,7 @@
 - [x] Implement regression using TFJS
 - [x] Option panel to tweak hyperparameters
 - [x] Visualize loss during training using tfjs-vis (Click on `Fly!`)
-- [x] Make it responsive, probably
+- [ ] Improved CSS support
 
 
 
