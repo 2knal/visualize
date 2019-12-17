@@ -23,6 +23,8 @@
 
 > Just an attempt to get my hands dirty with TFJS and p5.js, inspired by coding train tfjs playlist.
 
+> Add points to the canvas by dragging the mouse. Tweak hyper parameters in the left panel and enjoy!
+
 > To try out visit: [visualize](https://visualize-regression.surge.sh)
 
 ------------------------------------------
