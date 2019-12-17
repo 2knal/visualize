@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+
+body {
+    background-image: url('images/background.jpg');
+    background-position: center;
+    background-size: cover;
+    font: 1.5rem 'Lato';
+    width: 100%;
+    height: auto;
+    bottom: 0px;
+    top: 0px;
+    left: 0;
+    position: relative;
+}
+
+h1 {
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+
+#main {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin: auto;
+}
+
+#canvas {
+    margin: 10vh;
+    border: 2px solid #444;
+    box-shadow: 0 0 10px #222;
+}
+
+#options {
+    background: #e8e8e8;
+    padding: 20px;
+    width: 600px; 
+    height: 600px; 
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    box-shadow: 0 0 10px #222;
+}
+
+#dropdown {
+    background-color: transparent;
+    border-color: black;
+    color: black;
+    border-radius: 3px;
+    border-width: 1px;
+    cursor: pointer;
+}
+
+option {
+    background-color: #e8e8e8;
+    cursor: pointer;
+}
+
+input[type=range] {
+    -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+    width: 100%; /* Specific width is required for Firefox. */
+    background: transparent; /* Otherwise white in Chrome */
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+    outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+
+    /* Hides the slider so custom styles can be added */
+    background: transparent; 
+    border-color: transparent;
+    color: transparent;
+}
+
+/* Special styling for WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 1px solid #000000;
+    height: 25px;
+    width: 10px;
+    border-radius: 3px;
+    background: #444;
+    cursor: pointer;
+    margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+}
+  
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    background: #222;
+    border-radius: 1.3px;
+    border: 0.2px solid #010101;
+}
+
+.button {
+    margin: 10px;
+    margin-right: 0px;
+    width: 15%;
+    height: auto;
+    font: 1.5rem 'Lato';
+    cursor: pointer;
+    border-color: black;
+    color: black;
+    border-radius: 3px;
+    border-width: 1px;
+}
+
+.button:hover{
+    color: white;
+    background-color: black;
+}
+
+footer {
+    padding: 10px;
+    color: #999;
+    text-align: center;
+    background: #444;
+    position: fixed;
+    height: 90px;
+    bottom: 0;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    #main {
+        display: flex;
+        flex-direction: column-reverse;
+        align-content: center;
+    }
+    #options {
+        margin-bottom: 100px;
+        width: 300px ;
+        height: 600px ;
+    }
+    #canvas {
+        margin: auto;
+        width: 300px !important;
+        height: 300px !important;
+    }
+}
